@@ -11,7 +11,8 @@ This MCP server connects Claude Desktop with ChannelTalk Open API via npx.
       "command": "npx",
       "args": ["-y", "channeltalk-mcp"],
       "env": {
-        "CHANNELTALK_API_KEY": "your_api_key"
+        "CHANNELTALK_API_KEY": "your_token_here",
+        "BASE_URL": "https://api.channel.io/open/v5"
       }
     }
   }
