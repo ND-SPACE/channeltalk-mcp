@@ -1,0 +1,42 @@
+{
+    "name": "channeltalk",
+    "description": "Claude를 위한 ChannelTalk 연동 도구",
+    "actions": {
+      "get_user_info": {
+        "description": "사용자의 정보를 조회합니다.",
+        "params": {
+          "userId": "string"
+        }
+      },
+      "list_user_chats": {
+        "description": "사용자의 대화 목록을 조회합니다.",
+        "params": {
+          "userId": "string",
+          "sortOrder": "string",
+          "limit": "integer"
+        }
+      },
+      "create_user_chat": {
+        "description": "사용자에게 새로운 채팅을 생성합니다.",
+        "params": {
+          "userId": "string"
+        }
+      },
+      "assign_manager": {
+        "description": "유저 채팅에 담당자를 지정합니다.",
+        "params": {
+          "userChatId": "string",
+          "managerId": "string",
+          "botName": "string"
+        }
+      },
+      "close_user_chat": {
+        "description": "유저 채팅을 종료합니다.",
+        "params": {
+          "userChatId": "string",
+          "botName": "string"
+        }
+      }
+    }
+  }
+  
